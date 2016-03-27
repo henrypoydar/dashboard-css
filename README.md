@@ -6,12 +6,16 @@ Produces a full-width page of "panels" arranged on a responsive grid. Each panel
 
 Here's a demo. (TODO)
 
+## Development
+
+    npm install
+    gulp serve
+
 ## TODO
 
-- Directory structure
-- Development workflow (watch demo dir)
-- Installation instructions
+- Installation (general, npm)
 - Contribution instructions
+- Development instructions
 - CI
 - Documentation
 

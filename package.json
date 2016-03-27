@@ -1,12 +1,24 @@
 {
   "name": "dashboard-css",
+  "title": "Dashboard CSS",
   "version": "0.0.1",
-  "description": "A minimal CSS framework for dashboard and control web applications",
+  "description": "A minimal CSS framework for dashboard and control applications",
   "author": "Henry Poydar",
+  "homepage": "https://github.com/hpoydar/dashboard-css",
+  "bugs": {
+    "url": "https://github.com/hpoydar/dashboard-css/issues"
+  },
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "2.11.2",
     "gulp": "3.9.1",
-    "gulp-header": "1.7.1"
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-clean-css": "2.0.4",
+    "gulp-header": "1.7.1",
+    "gulp-minify-css": "1.2.4",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "2.2.0",
+    "gulp-sourcemaps": "1.6.0"
   },
   "scripts": {},
   "dependencies": {}
