@@ -1,0 +1,13 @@
+{
+  "name": "dashboard-css",
+  "version": "0.0.1",
+  "description": "A minimal CSS framework for dashboard and control web applications",
+  "author": "Henry Poydar",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-header": "1.7.1"
+  },
+  "scripts": {},
+  "dependencies": {}
+}
