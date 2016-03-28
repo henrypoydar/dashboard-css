@@ -2,7 +2,7 @@
   "name": "dashboard-css",
   "title": "Dashboard CSS",
   "version": "0.0.1",
-  "description": "A minimal CSS framework for dashboard and control applications",
+  "description": "A small CSS framework for dashboard and control applications",
   "author": "Henry Poydar",
   "homepage": "https://github.com/hpoydar/dashboard-css",
   "bugs": {

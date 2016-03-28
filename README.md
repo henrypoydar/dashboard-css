@@ -1,6 +1,6 @@
 # Dashboard CSS
 
-A minimal CSS framework for dashboard and control applications. Great for web-based IoT projects.
+A small CSS framework for dashboard and control applications. Great for web-based IoT projects.
 
 Produces a full-width page of "panels" arranged on a responsive grid. Each panel contains output information and/or control form elements.
 
