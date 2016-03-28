@@ -6,8 +6,20 @@ Produces a full-width page of "panels" arranged on a responsive grid. Each panel
 
 Here's a demo. (TODO)
 
+## Why
+
+I often run a web server on Raspberry PIs, usually to view data or expose some rudimentary controls to my smartphone or laptop via the browser. I couldn't find an existing CSS framework that quite suited my needs, so I built this one.
+
+## Design goals
+
+- Only 1 minified file
+- No externally-loaded dependencies
+- Semantic HTML just works where appropriate
+- Limit browser support to avoid hacks
+
 ## Development
 
+    gem install scss-lint
     npm install
     gulp serve
 

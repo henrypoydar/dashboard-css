@@ -1,0 +1,14 @@
+
+// Palette
+$color-gray: #95a5a6;
+$color-gray-dark: darken($color-gray, 10%);
+$color-gray-darker: darken($color-gray, 20%);
+$color-gray-light: lighten($color-gray, 10%);
+$color-gray-lighter: lighten($color-gray, 20%);
+$color-info: #2980b9;
+$color-success: #27ae60;
+$color-danger: #c0392b;
+$color-warning: #e67e22;
+
+// Fonts
+$font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;

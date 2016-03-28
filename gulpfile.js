@@ -7,6 +7,7 @@ var header = require('gulp-header');
 var cleancss = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var sass = require('gulp-sass');
+var scsslint = require('gulp-scss-lint');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 
@@ -26,13 +27,13 @@ var banner = ['/*!',
   ' * Dashboard CSS v<%= pkg.version %>',
   ' * <%= pkg.homepage %>',
   ' *',
-  ' * Copyright (c) Henry Poydar',
-  ' * Licensed under the MIT license',
+  ' * Copyright (c) <%= pkg.author %>',
+  ' * Licensed under the <%= pkg.license %> license',
   '*/',
   '', ''].join('\n');
 
 gulp.task('sass', function () {
-  gulp.src(sources.sass)
+  return gulp.src(sources.sass)
     .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'expanded'
@@ -50,14 +51,21 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(targets.dist));
 });
 
+gulp.task('lint', function() {
+  return gulp.src(sources.sass)
+    .pipe(scsslint())
+    .pipe(scsslint.failReporter('E'))
+});
+
 gulp.task('serve', function() {
   browserSync.init({
     server: targets.server
   });
   gulp.watch(sources.sass, ['sass']);
   gulp.watch(sources.html).on('change', browserSync.reload);
+  return;
 });
 
-gulp.task('build', ['sass']);
+gulp.task('build', ['lint', 'sass']);
 
 gulp.task('default', ['build']);
