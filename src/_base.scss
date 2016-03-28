@@ -4,16 +4,49 @@ html {
 }
 
 body {
-  color: $gray-dark;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  background: $gray-darker;
+  background: linear-gradient(left, $gray-darker 0%, $gray-darker-er 100%);
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   text-rendering: auto;
   line-height: 1.6;
+  a {
+    color: $blue;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited, &:focus {
+      color: $blue;
+    }
+  }
+}
+
+header {
+  padding: 15px;
+  h1 {
+    font-size: 24px;
+    color: #fff;
+    opacity: 0.80;
+  }
+}
+
+nav {
+  display: none;
 }
 
 footer {
+  opacity: 0.40;
   position: absolute;
   bottom: 20px;
   right: 20px;
+  color: #fff;
+  a, a:hover, a:visited, a:focus {
+    color: #fff;
+  }
+  p {
+    margin-bottom: 0;
+    line-height: 1.0;
+  }
 }
