@@ -75,5 +75,6 @@ gulp.task('serve', function() {
 });
 
 gulp.task('build', ['comb', 'lint', 'sass']);
+gulp.task('test', ['build']);
 
-gulp.task('default', ['build']);
+gulp.task('default', ['test']);
