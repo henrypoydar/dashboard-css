@@ -1,6 +1,6 @@
 # Dashboard CSS
 
-[![Build Status](https://img.shields.io/travis/twbs/bootstrap/master.svg)](https://travis-ci.org/hpoydar/dashboard-css)
+[![Build Status](https://travis-ci.org/hpoydar/dashboard-css.svg?branch=master)](https://travis-ci.org/hpoydar/dashboard-css?branch=master)
 
 A small CSS framework for dashboard and control applications. Great for web-based IoT projects.
 
