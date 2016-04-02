@@ -1,0 +1,35 @@
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav input.nav-menu-btn {
+  display: none;
+}
+
+nav label.nav-menu-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.0rem;
+
+  display: inline-block;
+  float: right;
+
+  width: 5rem;
+  height: 5rem;
+
+  cursor: pointer;
+
+  opacity: 0.8;
+  border-radius: 50%;
+  background: #ffffff;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><line x1="15" x2="35" y1="19" y2="19" stroke-width="3" stroke="#{$color-gray-darkest}" /><line x1="15" x2="35" y1="25" y2="25" stroke-width="3" stroke="#{$color-gray-darkest}" /><line x1="15" x2="35" y1="31" y2="31" stroke-width="3" stroke="#{$color-gray-darkest}" /></svg>');
+  &:hover {
+    opacity: 1.0;
+  }
+}
+
+nav ul {
+  display: none;
+}

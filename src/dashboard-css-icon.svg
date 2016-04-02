@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+<g>
+  <rect x="50" y="150" width="900" height="700" rx="50" ry="50" fill="#667273"/>
+</g>
+<g>
+  <line x1="275" y1="250" x2="275" y2="750" fill="none" stroke="#ffffff" stroke-width="50" />
+  <line x1="500" y1="250" x2="500" y2="750" fill="none" stroke="#ffffff" stroke-width="50" />
+  <line x1="725" y1="250" x2="725" y2="750" fill="none" stroke="#ffffff" stroke-width="50" />
+</g>
+<g>
+  <circle cx="275" cy="500" r="75" fill="#ffffff" />
+  <circle cx="500" cy="400" r="75" fill="#ffffff" />
+  <circle cx="725" cy="600" r="75" fill="#ffffff" />
+</g>
+</svg>

@@ -65,11 +65,11 @@ gulp.task('lint', function() {
     .pipe(scsslint.failReporter('E'))
 });
 
-gulp.task('serve', function() {
+gulp.task('serve', ['build'], function() {
   browserSync.init({
     server: targets.server
   });
-  gulp.watch(sources.sass, ['sass']);
+  gulp.watch(sources.scss, ['sass']);
   gulp.watch(sources.html).on('change', browserSync.reload);
   return;
 });

@@ -1,10 +1,12 @@
 
 // Palette
-$color-gray: #95a5a6;
+$color-gray: #7f8c8d;
 $color-gray-dark: darken($color-gray, 10%);
 $color-gray-darker: darken($color-gray, 20%);
+$color-gray-darkest: darken($color-gray, 30%);
 $color-gray-light: lighten($color-gray, 10%);
 $color-gray-lighter: lighten($color-gray, 20%);
+$color-gray-lightest: lighten($color-gray, 30%);
 $color-info: #2980b9;
 $color-success: #27ae60;
 $color-danger: #c0392b;

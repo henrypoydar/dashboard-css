@@ -4,7 +4,7 @@
 // Lots borrowed from Bootstrap
 
 html {
-  font-size: 16px;
+  font-size: 62.5%;
 
   box-sizing: border-box;
   // Changes the default tap highlight to be completely transparent in iOS.
@@ -20,7 +20,8 @@ html {
 
 body {
   font-family: $font-family;
-  font-size: 1rem;
+  font-size: 1.6rem;
+  font-weight: 300;
   line-height: 1.5;
 }
 
@@ -191,58 +192,3 @@ input[type='search'] {
 [hidden] {
   display: none !important;
 }
-
-// TODO: See resets in bootstrap, others
-
-// html {
-//   font-size: 62.5%;
-//   box-sizing: border-box;
-// }
-
-// body {
-//   background: $gray-dark;
-//   background: linear-gradient(left, $gray-dark 0%, $gray-darker 100%);
-//   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-//   font-size: 1.6rem;
-//   font-weight: 300;
-//   text-rendering: auto;
-//   line-height: 1.6;
-//   a {
-//     color: $blue;
-//     text-decoration: none;
-//     &:hover {
-//       text-decoration: underline;
-//     }
-//     &:visited, &:focus {
-//       color: $blue;
-//     }
-//   }
-// }
-
-// header {
-//   padding: 15px;
-//   h1 {
-//     font-size: 24px;
-//     color: #fff;
-//     opacity: 0.80;
-//   }
-// }
-
-// nav {
-//   display: none;
-// }
-
-// footer {
-//   opacity: 0.40;
-//   position: absolute;
-//   bottom: 20px;
-//   right: 20px;
-//   color: #fff;
-//   a, a:hover, a:visited, a:focus {
-//     color: #fff;
-//   }
-//   p {
-//     margin-bottom: 0;
-//     line-height: 1.0;
-//   }
-// }
