@@ -21,7 +21,7 @@ I often run a web server on Raspberry PIs, usually to view data or expose some r
 
 You'll need Ruby and node.js installed. Then:
 
-    gem install scss-lint
+    gem install scss_lint
     npm install
 
 All working files are in the `/src` directory.
