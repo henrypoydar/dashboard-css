@@ -30,7 +30,7 @@ Use `gulp serve` to watch and build source changes while observing a demo page t
 
 Use `gulp build` to re-create distribution files in `dist`.
 
-The build task includes a Sass linter that will output problems, but will not halt the build. Make sure the issues are addressed before issuing any pull requests.
+The build task includes a Sass linter. Make sure all errors and warnings cleared before issuing any pull requests.
 
 The build task also includes [CSS Comb](http://csscomb.com), a CSS sorting and syntax tool that will directly modify the Sass files in `/src`.
 

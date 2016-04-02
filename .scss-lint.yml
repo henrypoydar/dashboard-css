@@ -1,0 +1,9 @@
+linters:
+  PropertySortOrder:
+    enabled: false
+  LeadingZero:
+    enabled: true
+    style: 'include_zero'
+  EmptyLineBetweenBlocks:
+    enabled: false
+    ignore_single_line_blocks: true

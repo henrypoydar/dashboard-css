@@ -410,8 +410,8 @@ textarea {
 }
 
 html {
-  box-sizing: border-box;
   font-size: 16px;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -427,11 +427,16 @@ body {
   line-height: 1.5;
 }
 
-[tabindex="-1"]:focus {
+[tabindex='-1']:focus {
   outline: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -455,7 +460,7 @@ ul ol {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 0;
 }
 
@@ -464,8 +469,8 @@ blockquote {
 }
 
 a {
-  color: #2980b9;
   text-decoration: none;
+  color: #2980b9;
 }
 
 a:focus, a:visited {
@@ -489,14 +494,14 @@ img {
   vertical-align: middle;
 }
 
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 
 a,
 area,
 button,
-[role="button"],
+[role='button'],
 input,
 label,
 select,
@@ -508,7 +513,7 @@ textarea {
 
 label {
   display: inline-block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 button:focus {
@@ -520,8 +525,8 @@ input,
 button,
 select,
 textarea {
-  margin: 0;
   line-height: inherit;
+  margin: 0;
   border-radius: 0;
 }
 
@@ -531,12 +536,12 @@ textarea {
 
 fieldset {
   min-width: 0;
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: 0;
 }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: none;
 }
 
@@ -546,7 +551,6 @@ input[type="search"] {
 
 body {
   color: #798d8f;
-  background: #798d8f;
   background: -webkit-linear-gradient(left, #798d8f 0%, #617374 100%);
   background: linear-gradient(to right, #798d8f 0%, #617374 100%);
 }
@@ -566,8 +570,8 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-  margin-bottom: 20px;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 h1 {
