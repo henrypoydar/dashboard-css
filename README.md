@@ -8,7 +8,7 @@ Here's a demo. (TODO)
 
 ## Why
 
-I often run a web server on Raspberry PIs, usually to view data or expose some rudimentary controls to my smartphone or laptop via the browser. I couldn't find an existing CSS framework that quite suited my needs, so I built this one.
+I often run a web server on Raspberry PIs, usually to view data or expose some rudimentary controls to my smartphone or laptop via the browser. I couldn't find an existing CSS framework that quite suited my needs for the web apps I want to serve from my PIs, so I built this one.
 
 ## Design goals
 
@@ -19,22 +19,34 @@ I often run a web server on Raspberry PIs, usually to view data or expose some r
 
 ## Development
 
+You'll need Ruby and node.js installed. Then:
+
     gem install scss-lint
     npm install
-    gulp serve
 
-## TODO
+All working files are in the `/src` directory.
 
-- Installation (general, npm)
-- Contribution instructions
-- Development instructions
-- CI
-- Documentation
+Use `gulp serve` to watch and build source changes while observing a demo page that includes the styles on port 3000.
+
+Use `gulp build` to re-create distribution files in `dist`.
+
+The build task includes a Sass linter that will output problems, but will not halt the build. Make sure the issues are addressed before issuing any pull requests.
+
+The build task also includes [CSS Comb](http://csscomb.com), a CSS sorting and syntax tool that will directly modify the Sass files in `/src`.
 
 ## Contributing
 
-- TODO
-- SCSS style guide (http://sass-guidelin.es/)
+- Fork and name your branch something meaningful
+- Follow the SCSS style guide (http://sass-guidelin.es/)
+- Make sure the gulp `build` task completes without any linting issues
+- Issue a pull request
+
+## TODO
+
+- Grid
+- Panels
+- Demo image
+- CI
 
 ## License
 

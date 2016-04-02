@@ -3,22 +3,24 @@
 var gulp = require('gulp');
 
 var autoprefixer = require('gulp-autoprefixer');
-var header = require('gulp-header');
+var browserSync = require('browser-sync');
 var cleancss = require('gulp-clean-css');
+var csscomb = require('gulp-csscomb');
+var header = require('gulp-header');
 var rename = require("gulp-rename");
 var sass = require('gulp-sass');
 var scsslint = require('gulp-scss-lint');
 var sourcemaps = require('gulp-sourcemaps');
-var browserSync = require('browser-sync');
 
 var sources = {
-  sass: "./src/*.scss",
+  scss: "./src/*.scss",
   html: "./demo/*.html"
 };
 
 var targets = {
   dist: "./dist",
   css: "./demo/css",
+  scss: "./src",
   server: "./demo"
 };
 
@@ -33,7 +35,7 @@ var banner = ['/*!',
   '', ''].join('\n');
 
 gulp.task('sass', function () {
-  return gulp.src(sources.sass)
+  return gulp.src(sources.scss)
     .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'expanded'
@@ -51,8 +53,14 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(targets.dist));
 });
 
+gulp.task('comb', function() {
+  return gulp.src(sources.scss)
+    .pipe(csscomb())
+    .pipe(gulp.dest(targets.scss));
+});
+
 gulp.task('lint', function() {
-  return gulp.src(sources.sass)
+  return gulp.src(sources.scss)
     .pipe(scsslint())
     .pipe(scsslint.failReporter('E'))
 });
@@ -66,6 +74,6 @@ gulp.task('serve', function() {
   return;
 });
 
-gulp.task('build', ['lint', 'sass']);
+gulp.task('build', ['comb', 'lint', 'sass']);
 
 gulp.task('default', ['build']);
