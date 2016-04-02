@@ -48,7 +48,6 @@ The build task also includes [CSS Comb](http://csscomb.com), a CSS sorting and s
 - Grid
 - Panels
 - Demo image
-- CI
 
 ## License
 
