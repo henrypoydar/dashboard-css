@@ -595,6 +595,17 @@ nav {
   right: 0;
 }
 
+nav ul {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  opacity: 0.9;
+  display: block;
+  width: 30rem;
+  background: white;
+  padding: 1rem;
+}
+
 nav input.nav-menu-btn {
   display: none;
 }
@@ -615,11 +626,8 @@ nav label.nav-menu-icon {
 }
 
 nav label.nav-menu-icon:hover {
-  opacity: 1.0;
-}
-
-nav ul {
-  display: none;
+  opacity: 0.9;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><line x1="17" x2="33" y1="17" y2="33" stroke-width="3" stroke="#363c3d" /><line x1="17" x2="33" y1="33" y2="17" stroke-width="3" stroke="#363c3d" /></svg>');
 }
 
 p {

@@ -3,6 +3,19 @@ nav {
   top: 0;
   right: 0;
 }
+nav ul {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+
+  display: none;
+
+  width: 30rem;
+  padding: 1rem;
+
+  opacity: 0.9;
+  background: white;
+}
 
 nav input.nav-menu-btn {
   display: none;
@@ -26,10 +39,7 @@ nav label.nav-menu-icon {
   background: #ffffff;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><line x1="15" x2="35" y1="19" y2="19" stroke-width="3" stroke="#{$color-gray-darkest}" /><line x1="15" x2="35" y1="25" y2="25" stroke-width="3" stroke="#{$color-gray-darkest}" /><line x1="15" x2="35" y1="31" y2="31" stroke-width="3" stroke="#{$color-gray-darkest}" /></svg>');
   &:hover {
-    opacity: 1.0;
+    opacity: 0.9;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><line x1="17" x2="33" y1="17" y2="33" stroke-width="3" stroke="#{$color-gray-darkest}" /><line x1="17" x2="33" y1="33" y2="17" stroke-width="3" stroke="#{$color-gray-darkest}" /></svg>');
   }
-}
-
-nav ul {
-  display: none;
 }
