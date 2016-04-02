@@ -14,7 +14,7 @@ I often run a web server on Raspberry PIs, usually to view data or expose some r
 
 ## Design goals
 
-- Only 1 minified file
+- Just 1 minified CSS file
 - No externally-loaded dependencies
 - Semantic HTML just works where appropriate
 - Limit browser support to avoid hacks
@@ -28,13 +28,10 @@ You'll need Ruby and node.js installed. Then:
 
 All working files are in the `/src` directory.
 
-Use `gulp serve` to watch and build source changes while observing a demo page that includes the styles on port 3000.
-
-Use `gulp build` to re-create distribution files in `dist`.
-
-The build task includes a Sass linter. Make sure all errors and warnings cleared before issuing any pull requests.
-
-The build task also includes [CSS Comb](http://csscomb.com), a CSS sorting and syntax tool that will directly modify the Sass files in `/src`.
+- Use `gulp serve` to watch and build source changes while observing a demo page that includes the styles on port 3000.
+- Use `gulp build` to re-create distribution files in `dist`.
+- The build task includes a Sass linter. Make sure all errors and warnings cleared before issuing any pull requests.
+- The build task also includes [CSS Comb](http://csscomb.com), a CSS sorting and syntax tool that will directly modify the Sass files in `/src`.
 
 ## Contributing
 
