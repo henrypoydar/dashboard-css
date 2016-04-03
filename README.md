@@ -17,9 +17,9 @@ I often run a web server on Raspberry PIs, usually to view data or expose some r
 - Just 1 minified CSS file
 - No externally-loaded dependencies
 - Semantic HTML just works where appropriate, no add-on classes needed
-- Flexbox grid
+- Responsive, flexbox grid
 - `rem` units
-- Limit browser support to avoid hacks
+- Limit browser support to avoid hacks and simplify maintainability
 
 
 ## Installation and usage
