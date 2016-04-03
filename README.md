@@ -16,8 +16,21 @@ I often run a web server on Raspberry PIs, usually to view data or expose some r
 
 - Just 1 minified CSS file
 - No externally-loaded dependencies
-- Semantic HTML just works where appropriate
+- Semantic HTML just works where appropriate, no add-on classes needed
+- Flexbox grid
+- `rem` units
 - Limit browser support to avoid hacks
+
+
+## Installation and usage
+
+Add the `/dist/dashboard.min.css` file to your html page.
+
+    <link rel="stylesheet" href="css/dashboard.min.css" type="text/css">
+
+## Usage
+
+TODO - layout, grid, panels
 
 ## Development
 
@@ -45,6 +58,8 @@ All working files are in the `/src` directory.
 - Grid
 - Panels
 - Demo image
+- Documentation
+- GH static page, domain
 
 ## License
 
