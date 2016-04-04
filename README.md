@@ -10,7 +10,7 @@ Here's a demo. (TODO)
 
 ## Why
 
-I often run a web server on Raspberry PIs, usually to view data or expose some rudimentary controls to my smartphone or laptop via the browser. I couldn't find an existing CSS framework that quite suited my needs for the web apps I want to serve from my PIs, so I built this one.
+I often run a web server on Raspberry PIs, usually to view data or expose some controls to my smartphone or laptop via the browser. I couldn't find an existing CSS framework that quite suited my needs for the web apps I want to serve from my PIs, so I built this one.
 
 ## Design goals
 

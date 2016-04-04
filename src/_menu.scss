@@ -6,6 +6,7 @@ nav {
 
 nav ul {
   position: absolute;
+  z-index: 100;
   top: 4rem;
   right: 4rem;
 
@@ -17,6 +18,7 @@ nav ul {
 
   border-radius: 1rem;
   background: lighten($color-gray-lightest, 5%);
+  box-shadow: 0 0 1rem $color-gray;
 }
 nav ul li {
   margin: 0;
@@ -39,9 +41,18 @@ nav ul li a {
   &:hover {
     text-decoration: none;
 
-    border-radius: 1rem;
     background: linear-gradient(to right, lighten($color-gray-lightest, 10%) 0%, lighten($color-gray-lightest, 5%) 100%);
   }
+}
+
+nav ul li:first-child a {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+nav ul li:last-child a {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 nav input {
@@ -50,9 +61,9 @@ nav input {
 
 nav label {
   position: absolute;
-  z-index: 100;
-  top: 1.5rem;
-  right: 2.0rem;
+  z-index: 200;
+  top: 2.0rem;
+  right: 2.5rem;
 
   display: inline-block;
   float: right;

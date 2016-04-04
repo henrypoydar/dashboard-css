@@ -1,0 +1,84 @@
+.panel {
+  position: relative;
+
+  min-height: 17rem;
+  padding: 2rem;
+  margin: 1rem 0.5rem;
+
+  border-radius: 1rem;
+  background: $color-panel-light;
+}
+
+.panel.double {
+
+  min-height: 34rem;
+
+}
+
+.panel h2 {
+  font-size: 2.4rem;
+  line-height: 5rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 5rem;
+
+  text-align: center;
+
+  color: $color-gray-darker;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: $color-gray-lightest;
+}
+
+.panel.info h2 {
+  background: lighten($color-info, 15%);
+  color: $color-panel-light;
+}
+.panel.success h2 {
+  background: lighten($color-success, 15%);
+  color: $color-panel-light;
+}
+
+.panel h3 {
+  font-size: 7.0rem;
+  line-height: 7.0rem;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 4.25rem;
+
+  text-align: center;
+
+  color: $color-gray-darker;
+  sub {
+    font-size: 2.0rem;
+
+    bottom: 0;
+
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+
+    color: $color-gray;
+  }
+}
+
+.panel time {
+  font-size: 1.6rem;
+  line-height: 4.0rem;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  color: $color-gray-lighter;
+}

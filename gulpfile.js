@@ -50,7 +50,8 @@ gulp.task('sass', function () {
     }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(targets.css))
-    .pipe(gulp.dest(targets.dist));
+    .pipe(gulp.dest(targets.dist))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('comb', function() {
