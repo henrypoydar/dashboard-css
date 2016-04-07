@@ -10,6 +10,7 @@ var header = require('gulp-header');
 var rename = require("gulp-rename");
 var sass = require('gulp-sass');
 var scsslint = require('gulp-scss-lint');
+var shell = require('gulp-shell');
 var sourcemaps = require('gulp-sourcemaps');
 
 var sources = {
@@ -65,6 +66,12 @@ gulp.task('lint', function() {
     .pipe(scsslint())
     .pipe(scsslint.failReporter('E'))
 });
+
+gulp.task('publish', shell.task([
+  'git co gh-pages',
+  'git merge master',
+  'git co master'
+]));
 
 gulp.task('serve', ['build'], function() {
   browserSync.init({

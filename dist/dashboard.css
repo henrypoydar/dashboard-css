@@ -1577,8 +1577,8 @@ p.lead {
 }
 
 ul.inline {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 ul.inline li {
@@ -1596,9 +1596,9 @@ h1.title {
 }
 
 img.responsive {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 nav {
