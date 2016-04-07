@@ -6,7 +6,7 @@ A small CSS framework for dashboard and control applications. Great for web-base
 
 Produces a full-width page of "panels" arranged on a responsive grid. Each panel contains output information and/or control form elements.
 
-Here's a demo. (TODO)
+[Here's a demo](http://dashboardcss.com/demo).
 
 ## Why
 

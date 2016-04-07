@@ -556,6 +556,11 @@ body {
   background: linear-gradient(to right, #4e5758 0%, #363c3d 100%);
 }
 
+body.light {
+  background: -webkit-linear-gradient(left, white 0%, #f8f9f9 100%);
+  background: linear-gradient(to right, white 0%, #f8f9f9 100%);
+}
+
 header {
   padding: 1.5rem 2.5rem;
 }
@@ -1561,6 +1566,41 @@ footer p {
   }
 }
 
+ul.lead,
+p.lead {
+  font-size: 2.0rem;
+  margin-bottom: 2.0rem;
+}
+
+.center {
+  text-align: center;
+}
+
+ul.inline {
+  list-style: none;
+  padding: 0;
+}
+
+ul.inline li {
+  display: inline-block;
+  padding: 0 0.75rem;
+}
+
+h1.title {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.muted {
+  color: #9aa4a5;
+}
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 nav {
   position: absolute;
   top: 0;
@@ -1726,6 +1766,7 @@ nav input[type=checkbox]:checked ~ label {
 
 p {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 small {
