@@ -1658,8 +1658,8 @@ nav input[type=checkbox]:checked ~ label {
 .panel {
   position: relative;
   min-height: 17rem;
-  padding: 2rem;
   margin: 1rem 0.5rem;
+  padding: 2rem;
   border-radius: 1rem;
   background: white;
 }
@@ -1684,13 +1684,13 @@ nav input[type=checkbox]:checked ~ label {
 }
 
 .panel.info h2 {
-  background: #55a5d9;
   color: white;
+  background: #55a5d9;
 }
 
 .panel.success h2 {
-  background: #4bd786;
   color: white;
+  background: #4bd786;
 }
 
 .panel h3 {

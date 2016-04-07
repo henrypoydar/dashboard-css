@@ -2,17 +2,15 @@
   position: relative;
 
   min-height: 17rem;
-  padding: 2rem;
   margin: 1rem 0.5rem;
+  padding: 2rem;
 
   border-radius: 1rem;
   background: $color-panel-light;
 }
 
 .panel.double {
-
   min-height: 34rem;
-
 }
 
 .panel h2 {
@@ -35,12 +33,12 @@
 }
 
 .panel.info h2 {
-  background: lighten($color-info, 15%);
   color: $color-panel-light;
+  background: lighten($color-info, 15%);
 }
 .panel.success h2 {
-  background: lighten($color-success, 15%);
   color: $color-panel-light;
+  background: lighten($color-success, 15%);
 }
 
 .panel h3 {
