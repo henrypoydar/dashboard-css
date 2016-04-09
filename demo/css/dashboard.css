@@ -1786,6 +1786,7 @@ nav label {
 
 nav input[type=checkbox] ~ ul {
   right: -28rem;
+  display: none;
   -webkit-transition: 100ms ease;
   transition: 100ms ease;
 }

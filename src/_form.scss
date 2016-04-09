@@ -79,7 +79,7 @@ input[type=number], {
     color: $color-gray-light;
   }
 
- &:disabled,
+  &:disabled,
   &[readonly] {
     // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
     opacity: 1;
@@ -103,4 +103,3 @@ label {
 
   color: $color-gray-dark;
 }
-
