@@ -65,6 +65,7 @@ All working files are in the `/src` directory.
 
 - [Bootstrap](http://getbootstrap.com/)
 - [Flexbox Grid](http://flexboxgrid.com/)
+- [Flat UI Colors](http://flatuicolors.com/)
 
 ## License
 

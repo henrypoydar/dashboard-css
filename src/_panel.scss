@@ -25,6 +25,7 @@
   h2 {
     font-size: 2.4rem;
     line-height: $panel-header-height;
+
     margin: 0;
     padding: 0;
 
@@ -68,28 +69,10 @@
   text-overflow: ellipsis;
 }
 
-.panel > footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  font-size: 1.6rem;
-  background: lighten($color-gray-lightest, 12%);
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  line-height: $panel-footer-height;
-
-  height: $panel-footer-height;
-
-  text-align: center;
-
-  color: $color-gray-lighter;
-}
-
-
 
 .panel > main h3 {
+  font-size: $panel-height - ($panel-padding * 2) - $panel-header-height - $panel-footer-height;
   line-height: $panel-height - ($panel-padding * 2) - $panel-header-height - $panel-footer-height;
-  font-size: $panel-height - ($panel-padding * 2) - $panel-header-height - $panel-footer-height - 0.5rem;
 
   margin: 0;
   padding: 0;
@@ -107,4 +90,22 @@
 
     color: $color-gray;
   }
+}
+
+.panel > footer {
+  font-size: 1.6rem;
+  line-height: $panel-footer-height;
+
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: $panel-footer-height;
+
+  text-align: center;
+
+  color: $color-gray-lighter;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background: lighten($color-gray-lightest, 12%);
 }
