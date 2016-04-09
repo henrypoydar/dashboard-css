@@ -75,22 +75,14 @@ nav label {
 nav input[type=checkbox] ~ ul {
   right: -28rem;
   display: none;
-
   transition: 100ms ease;
-  // opacity: 0;
-
-  // filter: alpha(opacity=0);
 }
 
 nav input[type=checkbox]:checked ~ ul {
   right: 0;
-  // transition: 1s;
-
+  display: block;
   transition: 100ms ease;
 
-  // opacity: 1;
-
-  // filter: alpha(opacity=100);
 }
 
 nav input[type=checkbox] ~ label {

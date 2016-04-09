@@ -1793,6 +1793,7 @@ nav input[type=checkbox] ~ ul {
 
 nav input[type=checkbox]:checked ~ ul {
   right: 0;
+  display: block;
   -webkit-transition: 100ms ease;
   transition: 100ms ease;
 }
