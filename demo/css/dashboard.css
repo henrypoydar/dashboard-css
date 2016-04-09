@@ -1635,8 +1635,8 @@ nav ul li a {
   display: block;
   margin: 0;
   padding: 1.25rem;
-  padding-left: 3rem;
   padding-right: 3rem;
+  padding-left: 3rem;
   color: #bedcf0 !important;
 }
 
@@ -1664,15 +1664,15 @@ nav label {
 }
 
 nav input[type=checkbox] ~ ul {
+  right: -28rem;
   -webkit-transition: 100ms ease;
   transition: 100ms ease;
-  right: -28rem;
 }
 
 nav input[type=checkbox]:checked ~ ul {
+  right: 0;
   -webkit-transition: 100ms ease;
   transition: 100ms ease;
-  right: 0;
 }
 
 nav input[type=checkbox] ~ label {

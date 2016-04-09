@@ -38,8 +38,8 @@ nav ul li a {
 
   margin: 0;
   padding: 1.25rem;
-  padding-left: 3rem;
   padding-right: 3rem;
+  padding-left: 3rem;
   // text-align: right;
 
   color: lighten($color-info, 40%) !important;
@@ -73,20 +73,21 @@ nav label {
 }
 
 nav input[type=checkbox] ~ ul {
+  right: -28rem;
   // visibility: hidden;
 
   transition: 100ms ease;
-  right: -28rem;
   // opacity: 0;
 
   // filter: alpha(opacity=0);
 }
 
 nav input[type=checkbox]:checked ~ ul {
+  right: 0;
   // visibility: visible;
   // transition: 1s;
+
   transition: 100ms ease;
-  right: 0;
 
   // opacity: 1;
 
@@ -102,4 +103,3 @@ nav input[type=checkbox]:checked ~ label {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><line x1="17" x2="33" y1="17" y2="33" stroke-width="3" stroke="#{$color-gray-darkest}" /><line x1="17" x2="33" y1="33" y2="17" stroke-width="3" stroke="#{$color-gray-darkest}" /></svg>');
   box-shadow: 0 0 1rem darken($color-gray-darkest, 50%);
 }
-
