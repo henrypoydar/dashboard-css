@@ -6,11 +6,11 @@ nav {
 
 nav ul {
   position: absolute;
-  z-index: 100;
+  z-index: 200;
   top: 4rem;
   right: 4rem;
 
-  width: 30rem;
+  width: 24rem;
   margin: 0;
   padding: 0;
 
@@ -61,7 +61,7 @@ nav input {
 
 nav label {
   position: absolute;
-  z-index: 200;
+  z-index: 300;
   top: 2.0rem;
   right: 2.5rem;
 

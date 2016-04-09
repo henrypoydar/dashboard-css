@@ -1,53 +1,98 @@
+
+
 .panel {
   position: relative;
+  z-index: 100;
 
-  min-height: 17rem;
+  min-height: $panel-height;
   margin: 1rem 0.5rem;
-  padding: 2rem;
+  padding: 0;
 
   border-radius: 1rem;
   background: $color-panel-light;
 }
 
 .panel.double {
-  min-height: 34rem;
+  min-height: $panel-height * 2 + $panel-padding;
 }
 
-.panel h2 {
-  font-size: 2.4rem;
-  line-height: 5rem;
+.panel > header {
+  height: $panel-header-height;
 
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 100%;
-  height: 5rem;
-
-  text-align: center;
-
-  color: $color-gray-darker;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   background: $color-gray-lightest;
-}
+  h2 {
+    font-size: 2.4rem;
+    line-height: $panel-header-height;
+    margin: 0;
+    padding: 0;
 
-.panel.info h2 {
-  color: $color-panel-light;
+    text-align: center;
+
+    color: $color-gray-darker;
+  }
+}
+.panel.info > header {
   background: lighten($color-info, 15%);
-}
-.panel.success h2 {
-  color: $color-panel-light;
-  background: lighten($color-success, 15%);
+  h2 {
+    color: $color-panel-light;
+  }
 }
 
-.panel h3 {
-  font-size: 7.0rem;
-  line-height: 7.0rem;
+.panel.success > header {
+  background: lighten($color-success, 15%);
+  h2 {
+    color: $color-panel-light;
+  }
+}
+.panel.danger > header {
+  background: lighten($color-danger, 15%);
+  h2 {
+    color: $color-panel-light;
+  }
+}
+.panel.warning > header {
+  background: lighten($color-warning, 15%);
+  h2 {
+    color: $color-panel-light;
+  }
+}
+
+.panel > main {
+  overflow: hidden;
+
+  padding: $panel-padding;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.panel > footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.6rem;
+  background: lighten($color-gray-lightest, 12%);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  line-height: $panel-footer-height;
+
+  height: $panel-footer-height;
+
+  text-align: center;
+
+  color: $color-gray-lighter;
+}
+
+
+
+.panel > main h3 {
+  line-height: $panel-height - ($panel-padding * 2) - $panel-header-height - $panel-footer-height;
+  font-size: $panel-height - ($panel-padding * 2) - $panel-header-height - $panel-footer-height - 0.5rem;
 
   margin: 0;
   padding: 0;
-  padding-top: 4.25rem;
 
   text-align: center;
 
@@ -62,21 +107,4 @@
 
     color: $color-gray;
   }
-}
-
-.panel time {
-  font-size: 1.6rem;
-  line-height: 4.0rem;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-  text-align: center;
-
-  color: $color-gray-lighter;
 }

@@ -61,6 +61,11 @@ All working files are in the `/src` directory.
 - Documentation
 - GH static page, domain
 
+## Thanks
+
+- [Bootstrap](http://getbootstrap.com/)
+- [Flexbox Grid](http://flexboxgrid.com/)
+
 ## License
 
 Copyright (c) Henry Poydar, released under the MIT license

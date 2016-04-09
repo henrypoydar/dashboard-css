@@ -25,25 +25,43 @@
 
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="panel">
-            <h2>Temperature</h2>
-            <time>2016-04-01 12:21 UTC</time>
-            <h3>23.5<sub>&deg;C</sub></h3>
+            <header>
+              <h2>Temperature</h2>
+            </header>
+            <main>
+              <h3>23.5<sub>&deg;C</sub></h3>
+            </main>
+            <footer>
+              <time>2016-04-01 12:21 UTC</time>
+            </footer>
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="panel">
-            <h2>Position</h2>
-            <time>2016-04-01 12:21 UTC</time>
-            <h3>14<sub>steps</sub></h3>
+            <header>
+              <h2>M1 Position</h2>
+            </header>
+            <main>
+              <h3>14<sub>steps</sub></h3>
+            </main>
+            <footer>
+              <time>2016-04-01 12:21 UTC</time>
+            </footer>
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="panel info">
-            <h2>Elapsed Time</h2>
-            <time>2016-04-01 12:21 UTC</time>
-            <h3>0:22:07.414</h3>
+            <header>
+              <h2>Elapsed Time</h2>
+            </header>
+            <main>
+              <h3>0:22:07.414</h3>
+            </main>
+            <footer>
+              <time>2016-04-01 12:21 UTC</time>
+            </footer>
           </div>
         </div>
 
@@ -53,17 +71,38 @@
 
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="panel double success">
-            <h2>Acceleration</h2>
-            <p>TODO: graph</p>
-            <time>2016-04-01 12:21 UTC</time>
+            <header>
+              <h2>Velocity Curves</h2>
+            </header>
+            <main>
+              <img class="responsive" src="chart.svg" alt="Chart" />
+            </main>
+            <footer>
+              <time>2016-04-01 12:21 UTC</time>
+            </footer>
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="panel double">
-            <h2>Motor Control</h2>
-            <p>TODO: forms</p>
-            <time>2016-04-01 12:21 UTC</time>
+            <header>
+              <h2>Motor Control</h2>
+            </header>
+            <main>
+              <div class="row">
+                <div class="col-md-6">
+                  <fieldset>
+                  <label>Motor A</label>
+                  <input type="text" />
+                  <button>Go</button>
+                  </fieldset>
+                </div>
+
+                <div class="col-md-6">
+                  <p>TODO: forms</p>
+                </div>
+              </div>
+            </main>
           </div>
         </div>
 

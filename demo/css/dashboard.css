@@ -551,6 +551,7 @@ input[type='search'] {
 }
 
 body {
+  padding-bottom: 4rem;
   color: #667273;
   background: -webkit-linear-gradient(left, #4e5758 0%, #363c3d 100%);
   background: linear-gradient(to right, #4e5758 0%, #363c3d 100%);
@@ -561,11 +562,11 @@ body.light {
   background: linear-gradient(to right, white 0%, #f8f9f9 100%);
 }
 
-header {
+body > header {
   padding: 1.5rem 2.5rem;
 }
 
-header h1 {
+body > header h1 {
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 5rem;
@@ -574,22 +575,22 @@ header h1 {
   color: #ffffff;
 }
 
-footer {
+body > footer {
   position: absolute;
-  right: 2.0rem;
-  bottom: 2.0rem;
+  right: 2.5rem;
+  bottom: 1.5rem;
   opacity: 0.40;
   color: #ffffff;
 }
 
-footer a,
-footer a:hover,
-footer a:visited,
-footer a:focus {
+body > footer a,
+body > footer a:hover,
+body > footer a:visited,
+body > footer a:focus {
   color: #ffffff;
 }
 
-footer p {
+body > footer p {
   line-height: 1.0;
   margin-bottom: 0;
 }
@@ -1609,10 +1610,10 @@ nav {
 
 nav ul {
   position: absolute;
-  z-index: 100;
+  z-index: 200;
   top: 4rem;
   right: 4rem;
-  width: 30rem;
+  width: 24rem;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1661,7 +1662,7 @@ nav input {
 
 nav label {
   position: absolute;
-  z-index: 200;
+  z-index: 300;
   top: 2.0rem;
   right: 2.5rem;
   display: inline-block;
@@ -1697,71 +1698,102 @@ nav input[type=checkbox]:checked ~ label {
 
 .panel {
   position: relative;
+  z-index: 100;
   min-height: 17rem;
   margin: 1rem 0.5rem;
-  padding: 2rem;
+  padding: 0;
   border-radius: 1rem;
   background: white;
 }
 
 .panel.double {
-  min-height: 34rem;
+  min-height: 35.5rem;
 }
 
-.panel h2 {
-  font-size: 2.4rem;
-  line-height: 5rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
+.panel > header {
   height: 5rem;
-  text-align: center;
-  color: #4e5758;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   background: #d0d5d5;
 }
 
-.panel.info h2 {
-  color: white;
-  background: #55a5d9;
-}
-
-.panel.success h2 {
-  color: white;
-  background: #4bd786;
-}
-
-.panel h3 {
-  font-size: 7.0rem;
-  line-height: 7.0rem;
+.panel > header h2 {
+  font-size: 2.4rem;
+  line-height: 5rem;
   margin: 0;
   padding: 0;
-  padding-top: 4.25rem;
   text-align: center;
   color: #4e5758;
 }
 
-.panel h3 sub {
+.panel.info > header {
+  background: #55a5d9;
+}
+
+.panel.info > header h2 {
+  color: white;
+}
+
+.panel.success > header {
+  background: #4bd786;
+}
+
+.panel.success > header h2 {
+  color: white;
+}
+
+.panel.danger > header {
+  background: #db695d;
+}
+
+.panel.danger > header h2 {
+  color: white;
+}
+
+.panel.warning > header {
+  background: #eea667;
+}
+
+.panel.warning > header h2 {
+  color: white;
+}
+
+.panel > main {
+  overflow: hidden;
+  padding: 1.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.panel > footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.6rem;
+  background: #f0f2f2;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  line-height: 3rem;
+  height: 3rem;
+  text-align: center;
+  color: #b5bcbd;
+}
+
+.panel > main h3 {
+  line-height: 6rem;
+  font-size: 5.5rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #4e5758;
+}
+
+.panel > main h3 sub {
   font-size: 2.0rem;
   bottom: 0;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   color: #7f8c8d;
-}
-
-.panel time {
-  font-size: 1.6rem;
-  line-height: 4.0rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #b5bcbd;
 }
 
 p {
