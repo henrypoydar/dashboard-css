@@ -551,8 +551,6 @@ input[type='search'] {
 }
 
 body {
-  padding-bottom: 4rem;
-  color: #667273;
   background: -webkit-linear-gradient(left, #4e5758 0%, #363c3d 100%);
   background: linear-gradient(to right, #4e5758 0%, #363c3d 100%);
 }
@@ -571,14 +569,15 @@ body > header h1 {
   font-weight: 300;
   line-height: 5rem;
   margin: 0;
+  margin-bottom: 0.5rem;
   opacity: 0.80;
   color: #ffffff;
 }
 
 body > footer {
-  position: absolute;
+  position: fixed;
   right: 2.5rem;
-  bottom: 1.5rem;
+  bottom: 1.0rem;
   opacity: 0.40;
   color: #ffffff;
 }
@@ -1567,6 +1566,128 @@ body > footer p {
   }
 }
 
+button {
+  font-size: 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin: 2rem 0 0rem 0;
+  padding: 1rem 3rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: #4e5758;
+  border: 0;
+  border-bottom: 0.25rem solid #7f8c8d;
+  border-radius: 0.5rem;
+  background: #d0d5d5;
+}
+
+button:hover {
+  background: #c2c9c9;
+}
+
+button.warning {
+  color: white;
+  border-bottom-color: #bf6516;
+  background: #eb9950;
+}
+
+button.warning:hover {
+  background: #e98b39;
+}
+
+button.info {
+  color: white;
+  border-bottom-color: #20638f;
+  background: #409ad5;
+}
+
+button.info:hover {
+  background: #2e8ece;
+}
+
+button.danger {
+  color: white;
+  border-bottom-color: #962d22;
+  background: #d65548;
+}
+
+button.danger:hover {
+  background: #d14233;
+}
+
+button.success {
+  color: white;
+  border-bottom-color: #1e8449;
+  background: #36d278;
+}
+
+button.success:hover {
+  background: #2cc36b;
+}
+
+input[type=text],
+input[type=number] {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  color: #4e5758;
+  border: 0.1rem solid #9aa4a5;
+  border-radius: 0.25rem;
+  background: #f8f9f9;
+  background-image: none;
+  background-clip: padding-box;
+  box-shadow: inset 0 0 0.5rem #d0d5d5;
+}
+
+input[type=text]::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder {
+  opacity: 1;
+  color: #9aa4a5;
+}
+
+input[type=text]::-moz-placeholder,
+input[type=number]::-moz-placeholder {
+  opacity: 1;
+  color: #9aa4a5;
+}
+
+input[type=text]:-ms-input-placeholder,
+input[type=number]:-ms-input-placeholder {
+  opacity: 1;
+  color: #9aa4a5;
+}
+
+input[type=text]::placeholder,
+input[type=number]::placeholder {
+  opacity: 1;
+  color: #9aa4a5;
+}
+
+input[type=text]:disabled, input[type=text][readonly],
+input[type=number]:disabled,
+input[type=number][readonly] {
+  opacity: 1;
+  background-color: #d0d5d5;
+}
+
+input[type=number] {
+  text-align: right;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: #667273;
+}
+
 ul.lead,
 p.lead {
   font-size: 2.0rem;
@@ -1652,7 +1773,7 @@ nav input {
 nav label {
   position: absolute;
   z-index: 300;
-  top: 2.0rem;
+  top: 0.5rem;
   right: 2.5rem;
   display: inline-block;
   float: right;
@@ -1689,7 +1810,7 @@ nav input[type=checkbox]:checked ~ label {
   position: relative;
   z-index: 100;
   min-height: 17rem;
-  margin: 1rem 0.5rem;
+  margin: 0rem 0.5rem 2rem 0.5rem;
   padding: 0;
   border-radius: 1rem;
   background: white;
@@ -1748,18 +1869,18 @@ nav input[type=checkbox]:checked ~ label {
 }
 
 .panel > main {
-  overflow: hidden;
   padding: 2rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .panel > main h3 {
   font-size: 5rem;
   line-height: 5rem;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   text-align: center;
+  white-space: nowrap;
+  text-overflow: clip;
   color: #4e5758;
 }
 

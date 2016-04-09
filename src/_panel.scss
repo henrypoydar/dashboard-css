@@ -5,7 +5,7 @@
   z-index: 100;
 
   min-height: $panel-height;
-  margin: 1rem 0.5rem;
+  margin: 0rem 0.5rem 2rem 0.5rem;
   padding: 0;
 
   border-radius: 1rem;
@@ -61,12 +61,7 @@
 }
 
 .panel > main {
-  overflow: hidden;
-
   padding: $panel-padding;
-
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 
@@ -74,10 +69,14 @@
   font-size: $panel-height - ($panel-padding * 2) - $panel-header-height - $panel-footer-height;
   line-height: $panel-height - ($panel-padding * 2) - $panel-header-height - $panel-footer-height;
 
+  overflow: hidden;
+
   margin: 0;
   padding: 0;
 
   text-align: center;
+  white-space: nowrap;
+  text-overflow: clip;
 
   color: $color-gray-darker;
   sub {

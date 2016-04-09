@@ -89,19 +89,48 @@
               <h2>Motor Control</h2>
             </header>
             <main>
-              <div class="row">
-                <div class="col-md-6">
-                  <fieldset>
-                  <label>Motor A</label>
-                  <input type="text" />
-                  <button>Go</button>
-                  </fieldset>
+              <form>
+                <div class="row">
+                  <div class="col-md-3">
+                    <label>Motor TL</label>
+                    <input type="number" value="210" />
+                  </div>
+                  <div class="col-md-3">
+                    <label>Motor TR</label>
+                    <input type="number" value="0" />
+                  </div>
+                  <div class="col-md-3">
+                    <label>Motor BL</label>
+                    <input type="number" value="405" />
+                  </div>
+                  <div class="col-md-3">
+                    <label>Motor BR</label>
+                    <input type="number" value="313" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <label>Trim TL</label>
+                    <input type="number" value="14" />
+                  </div>
+                  <div class="col-md-3">
+                    <label>Trim TR</label>
+                    <input type="number" value="0" />
+                  </div>
+                  <div class="col-md-3">
+                    <label>Trim BL</label>
+                    <input type="number" value="0" />
+                  </div>
+                  <div class="col-md-3">
+                    <label>Trim BR</label>
+                    <input type="number" value="-10" />
+                  </div>
                 </div>
 
-                <div class="col-md-6">
-                  <p>TODO: forms</p>
-                </div>
-              </div>
+                <button class="info">Apply</button>
+                <button class="warning">Execute</button>
+                <button class="danger">Halt</button>
+              </form>
             </main>
           </div>
         </div>

@@ -1,8 +1,5 @@
 
 body {
-  padding-bottom: 4rem;
-
-  color: $color-gray-dark;
   background: linear-gradient(to right, $color-gray-darker 0%, $color-gray-darkest 100%);
   &.light {
     background: linear-gradient(to right, white 0%, lighten($color-gray-lightest, 15%) 100%);
@@ -18,15 +15,16 @@ body > header {
     line-height: 5rem;
 
     margin: 0;
+    margin-bottom: 0.5rem;
 
     opacity: 0.80;
     color: #ffffff;
   }
 }
 body > footer {
-  position: absolute;
+  position: fixed;
   right: 2.5rem;
-  bottom: 1.5rem;
+  bottom: 1.0rem;
 
   opacity: 0.40;
   color: #ffffff;
