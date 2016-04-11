@@ -74,15 +74,18 @@ nav label {
 
 nav input[type=checkbox] ~ ul {
   right: -28rem;
+
   display: none;
+
   transition: 100ms ease;
 }
 
 nav input[type=checkbox]:checked ~ ul {
   right: 0;
-  display: block;
-  transition: 100ms ease;
 
+  display: block;
+
+  transition: 100ms ease;
 }
 
 nav input[type=checkbox] ~ label {

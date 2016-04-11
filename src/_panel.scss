@@ -91,6 +91,10 @@
   }
 }
 
+.panel > main img {
+  margin-bottom: 1rem;
+}
+
 .panel > footer {
   font-size: 1.6rem;
   line-height: $panel-footer-height;
